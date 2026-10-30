@@ -12,3 +12,5 @@ An AI bot skill that builds your weekly grocery cart for you, right up to checko
 6. Let it run. Got a special request this week? Just tell your bot in chat.
 
 Your bot never checks out until you say "place it".
+
+Always double check allergens and labels yourself. See the [Disclaimer](../DISCLAIMER.md).
