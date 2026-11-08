@@ -29,20 +29,25 @@ No vendor API or paid account is required. Use the editor, storage, and playback
 
 ## Authority
 
-Apply the latest applicable direct user instruction first. Scope each decision to this account, series, output, and revision.
+Use this order. A lower item does not override a higher one. An approved series convention does not override the latest explicit account native kit.
 
-1. Latest direct instruction for this output.
-2. User-approved take default, then other approved series conventions.
-3. Current account style specification.
-4. This playbook.
+1. Current direct instruction for this account, series, output, and revision.
+2. Applicable account specifications and dated overrides, including the latest explicit native kit.
+3. Approved series conventions and reference technique.
+4. This generic playbook.
 
-Account style rules outrank a look inferred from reference videos. Approved series conventions outrank generic defaults. Historical examples, draft notes, and analyst suggestions are not standing instructions.
+Apply each rule only inside its scope.
 
-Ask about a material unresolved conflict. Do not guess. Never borrow another account's kit.
+- The approved take default governs which take to use. It does not set fonts, filter, layout, captions, cover, title preset, or any other native-kit choice. Those follow the account specification and its dated overrides unless a current direct instruction changes them.
+- Among account specifications and dated overrides, use the latest one that applies to this output. A series convention or a reference technique does not replace that kit.
+- A reference may show technique, such as pacing. It does not donate fonts, colors, music, or another account's kit.
+- Historical examples, draft notes, and analyst suggestions are not standing instructions.
+
+Ask about a material conflict inside the same scope. Do not guess. Never borrow another account's kit.
 
 ## Workflow
 
-Run these seven stages in order. Use the edit plan, output manifest, and review notes templates at the end of this skill. A later stage can send the work back to an earlier one. After any change to the cut, retest the new rendered export before you change state.
+Run these seven stages in order. Use the edit plan, output manifest, and review notes templates at the end of this skill. A later stage can send the work back to an earlier one. After any change to the cut, retest the new rendered export before you change brand verification, the editorial result, or approval.
 
 ### 1. Brief, audience, and intent
 
@@ -79,14 +84,14 @@ Stage result: a beat table on the edit plan.
 
 Review every available source before you commit to a cut. When the piece has little or no speech, still review the full source and preserve the meaning of on-screen words and of the action. Mark speech-only steps as not applicable on the edit plan.
 
-1. Treat a transcript or automatic speech recognition as a set of candidate cuts. Set word boundaries by listening. The transcript does not establish a safe cut.
-2. Compare complete takes for meaning, delivery, gestures, and natural cadence. Apply a verified user-approved take default when one is recorded. This playbook does not add its own ordinal default. Do not pick a take because it is second or later unless that is the approved default, or the comparison itself supports the choice. Record the choice and the reason.
+1. Treat a transcript or automatic speech recognition as a set of candidate cuts. Set word boundaries from the actual audio. The transcript does not establish a safe cut. Do not claim the audio was heard unless that review happened.
+2. Compare complete takes for meaning, delivery, gestures, and natural cadence. Apply a verified user-approved take default when one is recorded. That default governs take choice only, not fonts, filter, or other native-kit choices. This playbook does not add its own ordinal default. Do not pick a take because it is second or later unless that is the approved default, or the comparison itself supports the choice. Record the choice and the reason.
 3. Assemble speech so the retained words mean what the speaker meant. Remove unhelpful dead air, accidental repetition, real stumbles, false starts, and excess breaths where the piece gets clearer. Keep intentional pauses, natural breaths, emphasis, emotion, and gestures. This playbook sets no silence threshold, breath threshold, fixed runtime, or zoom quota.
 4. Keep complete words, syllables, and consonants. Leave speech speed and pitch as recorded. Do not fabricate speech or an experience, and do not splice words into a different meaning.
 5. Keep a source-range edit list with a reason for every cut. Check order, reused handles, replay, and accidental overlap. When audio sounds doubled, separate a reflection that was already in the source from a replay the edit created.
-6. Listen across every join with context on both sides. If a join fails, keep the uncut original until a source-supported correction exists, then retest that join. A meter reading does not overrule clipped speech or an unnatural cadence.
+6. Review every join in picture and audio, with context on both sides, using the monitoring or review means actually available. Record what was used. Do not record listening that did not happen. If a join fails, keep the uncut original until a source-supported correction exists, then retest that join. A meter reading does not overrule clipped speech or an unnatural cadence.
 
-Stage result: an edit list on the edit plan. Each cut has a reason. Each join is marked listened-to or still open.
+Stage result: an edit list on the edit plan. Each cut has a reason. Each join is marked reviewed in picture and audio, or still open. Do not mark a join reviewed unless that review happened.
 
 ### 4. External brand binding
 
@@ -102,9 +107,9 @@ Bind each item the specification provides:
 - Authorized audio
 - Dated overrides that apply to this output
 
-Duplicate the approved cover template. Leave the master unchanged. A reference can inform pacing. It cannot donate its fonts, colors, or music.
+Duplicate the approved cover template. Leave the master unchanged. A series convention or a reference can inform technique. Neither one replaces the latest explicit account native kit, and neither one donates fonts, colors, or music.
 
-List every missing native component on the manifest, individually. While a required component is missing, the state is provisional. Do not label that output brand-complete.
+List every missing native component on the manifest, individually. While a required component is missing, brand verification is `incomplete`. Do not label that output brand-complete. Incomplete brand verification does not pass or fail the editorial review.
 
 Stage result: manifest fields for the style-spec revision, components bound, and components missing.
 
@@ -130,27 +135,28 @@ Stage result: the caption map matches the final edit list. Each visual, zoom, ef
 
 Export the delivery file with the tools already available. Default delivery, unless the brief requires another format, is H.264 video and AAC audio at a source-appropriate frame rate and the requested aspect ratio.
 
-Record technical checks separately from perceptual review. Technical checks confirm that the file plays, the dimensions match the request, audio is present, and picture and sound stay in sync.
+Record technical checks separately from the editorial review. Technical checks confirm that the file plays, the dimensions match the request, audio is present, and picture and sound stay in sync. A technical pass is not an editorial pass.
 
-Set the state from evidence on this version:
+Record these separately. Brand verification does not set the editorial result, and neither field is user approval.
 
-- `timing candidate` — the assembly exists, and full export review is not done.
-- `provisional` — review happened, and one or more required native components are still missing.
-- `native verified` — the intended native assets were inspected in the rendered result.
-- `user approved` — the user explicitly approved this version.
+- **Assembly status.** `timing candidate` when the assembly exists and export review is unfinished. `exported` when a rendered file exists. This status says nothing about brand or craft.
+- **Brand verification.** `not checked`, `verified`, or `incomplete`. `verified` means the intended native assets were inspected in this rendered result. `incomplete` means a required native component is still missing; list each one. `verified` is not an editorial pass.
+- **Editorial result.** `not reviewed`, `incomplete`, `pass`, or `fail`. `pass` requires the independent full-render review below. Brand verification does not set it.
+- **User approval.** `not approved`, or the user's explicit approval of this version. Do not infer approval from brand verification or from an editorial pass.
 
-A completion marker, a successful decode, or an upload does not set the state. A candidate that fails review stays rejected, including when the file plays.
+A completion marker, a successful decode, an upload, or a verified native kit does not set the editorial result. A failed editorial review stays failed, including when the file plays and the brand kit is verified.
 
-Independent review of the rendered export is mandatory before any claim that the edit passed:
+Independent review of the rendered export is required before an editorial pass:
 
 - The reviewer is separate from the step that generated the cut.
-- The reviewer watches the full exported video.
-- The reviewer listens to the full exported audio on headphones.
-- The reviewer checks every join.
+- The reviewer is a person, or an audiovisual review service that reviews the rendered picture and audio.
+- The reviewer covers the full exported picture, the full exported audio, and every join.
+- A person uses headphones or other suitable monitoring when that monitoring is available, and records the monitoring actually used.
+- An audiovisual review service records the picture and audio coverage it actually produced, and any limits. It records human monitoring as `not a human review`. It never claims physical headphones.
 
-Record who or what reviewed it, and record any limit, such as a section that would not play, a missing headphone pass, or a reviewer who also generated the cut. File metadata, duration, frame count, a transcript, a waveform, and still frames do not substitute for watching and listening.
+Do not record listening, a headphone pass, or service coverage that did not happen. File metadata, duration, frame count, a transcript, a waveform, and still frames do not substitute for review of the rendered picture and audio.
 
-An optional external review tool may add a supplemental pass. Name the tool and what it covered. The tool does not replace the full watch and listen. If the full review cannot be done, write that the review is missing and do not claim the export passed.
+A waveform, transcript, still, or other external checker may add a supplemental pass. Name it and what it covered. It does not replace the full picture, audio, and join review, and it cannot be the independent reviewer. If that full review cannot be done, write that the editorial result is `incomplete` and do not claim a pass.
 
 On the actual export, confirm:
 
@@ -165,7 +171,7 @@ On the actual export, confirm:
 
 Editing does not authorize a production upload, a share, a message, scheduling, or a workflow-status change.
 
-Stage result: export file recorded on the manifest, technical notes separate from review notes, state set from the evidence above.
+Stage result: export file recorded on the manifest, technical notes separate from review notes, brand verification and editorial result recorded as separate evidence.
 
 ### 7. Revision and retest
 
@@ -173,7 +179,7 @@ Keep returned or rejected revisions in their own queue, apart from new edits. St
 
 A correction, a new export, or a later approval gets a new manifest that links to the previous one. Do not edit an old manifest so that a changed input or a changed result looks like the original record.
 
-Listen again to every join the revision touched, with context on both sides. Then repeat stage 6 on the new export. A timeline fix stays unaccepted until that independent review of the new rendered picture and sound is recorded. Set the new state from the new evidence.
+Review again every join the revision touched, in picture and audio, with context on both sides. Then repeat stage 6 on the new export. A timeline fix stays unaccepted until that independent review of the new rendered picture and sound is recorded. Set brand verification and the editorial result from the new evidence. Do not carry either field forward from the previous version.
 
 Publishing, scheduling, and approval stay separate and need their own authorization.
 
@@ -244,7 +250,7 @@ Beats
 # | Role (hook / story / payoff) | Purpose | Source range | Carrier (speech / visual / music) | Notes
 
 Cuts
-Source in | Source out | Reason | Meaning preserved (yes / no) | Join listened (yes / no)
+Source in | Source out | Reason | Meaning preserved (yes / no) | Join reviewed in picture and audio (yes / no)
 ```
 
 ### Output manifest
@@ -262,9 +268,11 @@ Direct overrides and provenance:
 Style-spec revision:
 Authorized audio:
 Rights note:
+Assembly status: timing candidate
+Brand verification: not checked
 Native components bound:
 Native components missing:
-State: timing candidate
+Editorial result: not reviewed
 Approval reference: not approved
 Other editor confirmed clear:
 ```
@@ -276,15 +284,22 @@ After a manifest is issued, leave that record unchanged. A changed input, export
 ```text
 Export file / version:
 Manifest id:
+Reviewer type: human | audiovisual review service
 Reviewer (separate from the generation step):
-Watched the full exported video (yes / no):
-Listened to the full exported audio on headphones (yes / no):
-Every join reviewed (yes / no):
+Full exported picture reviewed (yes / no):
+Full exported audio reviewed (yes / no):
+Every join reviewed in picture and audio (yes / no):
+Human monitoring: headphones | other suitable monitoring | not a human review
+Service AV coverage: none
+Service AV limits: none
 Limits of this review:
-External review tool (optional): none
-What that tool covered: none
+Supplemental checker (optional; not the independent reviewer): none
+What that checker covered: none
 
-Pass / fail
+Brand verification: not checked | verified | incomplete
+Editorial result: not reviewed | incomplete | pass | fail
+
+Editorial checklist (pass / fail)
 Hook legible at the start in the bound treatment:
 Intended takes complete; syllables and meaning intact:
 Dead air and excess breaths handled; intentional pauses kept:
@@ -296,21 +311,24 @@ Ending supported by the sources:
 
 Joins that failed:
 Technical check (playback, dimensions, audio, sync), kept separate:
-State after review:
 Publish / schedule: not authorized by this review
 ```
 
-The three watch-and-listen lines have to be `yes` before the export can pass. If any line is `no`, the review is incomplete. Do not mark the export passed. Stills, waveforms, transcripts, and file metadata do not change a `no` into a `yes`.
+An editorial `pass` requires all three coverage lines to be `yes`: full rendered picture, full rendered audio, and every join. The reviewer must be separate from the step that generated the cut. If any coverage line is `no`, the editorial result is `incomplete` or `fail`, not `pass`.
+
+When the reviewer is a person, set human monitoring to the monitoring actually used. Use headphones or other suitable monitoring when it is available. When the reviewer is an audiovisual review service, set human monitoring to `not a human review`, and write the picture and audio coverage the service actually produced plus its limits. Do not mark headphones for a service review. Do not claim listening, coverage, or a headphone pass that did not happen.
+
+Brand verification stays on its own line. `verified` does not make the editorial result `pass`. Stills, waveforms, transcripts, and file metadata do not change a coverage `no` into a `yes`.
 
 ## Done when
 
 - The edit plan, the caption map, and the final cut describe the same version.
 - This output has its own manifest, and older manifests were left as written.
-- Every missing native component is listed, and the state matches the evidence.
-- Review notes cover a full independent watch and listen of the rendered export, or the missing review is disclosed and no pass is claimed.
+- Every missing native component is listed. Brand verification and the editorial result are both recorded, and neither one is inferred from the other.
+- Review notes cover an independent full-render review of picture, audio, and every join by a person or an audiovisual review service, or the missing coverage is disclosed and no editorial pass is claimed.
 - A revision was retested on its new export, including the joins that changed.
 - Publishing, scheduling, and user approval remain separate actions.
 
 ## Limits
 
-This skill is a draft. Real export validation is pending. Do not describe the production workflow as fixed. Do not invent a test result, a vendor account, or a native kit to complete a field. An optional review tool can supplement the independent watch and listen. It cannot replace them.
+This skill is a draft. Real export validation is pending. Do not describe the production workflow as fixed. Do not invent a test result, a vendor account, a native kit, or a listening pass to complete a field. A supplemental checker can add a note to the independent picture-and-audio review. It cannot replace that review, and it cannot claim physical headphones.
