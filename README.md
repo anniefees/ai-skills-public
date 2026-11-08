@@ -5,8 +5,11 @@ Free skills you can drop into your own AI bot.
 | Skill | What it does |
 | --- | --- |
 | [Instacart Grocery Shopper](instacart-grocery-shopper/) | Builds your weekly grocery cart from your Notion preferences, within budget, and waits for your OK before checkout. |
+| [Video editing playbook](video-editing-playbook/) | Draft workflow for editing spoken and visual videos for trust and clarity, then reviewing the rendered export. Real export validation is still pending. |
 
 Grocery skill template: [Grocery Brain Dump on Notion](https://workable-hourglass-0b9.notion.site/Grocery-Brain-Dump-409947125a768195b1b7cb5b740a2c14)
+
+The video editing playbook is a draft pending real export validation. It does not require a vendor API or a paid account, and it is not a finished production workflow.
 
 These skills are free to use at your own risk. Your bot can make mistakes, so always check its work and never let it pay without your OK. Please read the [Disclaimer](DISCLAIMER.md) before you start.
 
