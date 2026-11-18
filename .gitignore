@@ -1,0 +1,12 @@
+# Secrets and credentials (never commit these)
+.env
+.env.*
+*.pem
+*.p12
+*credentials*
+*secret*
+.grok/*.local
+
+# The pattern *secret* above would also hide the no-secrets-in-git skill folder, so keep it tracked:
+!no-secrets-in-git/
+!no-secrets-in-git/**
